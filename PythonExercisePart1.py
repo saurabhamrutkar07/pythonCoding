@@ -2184,28 +2184,60 @@
 # print()
 
 
+# """
+# 118. Create Bytearray from List
+
+# Write a Python program to create a bytearray from a list.
+# """
+
+# nums = [10, 20, 56, 35, 17, 99]
+
+# print(type(nums))
+
+# for num in nums:
+#     print(num),print(type(num))
+
+# nums = bytearray(nums)
+
+# for num in nums:
+#     print(num),print(type(num))
+
+
+# print(type(nums))
+
 """
-118. Create Bytearray from List
+117. String Memory Location Test
 
-Write a Python program to create a bytearray from a list.
+Write a Python program to prove that two string variables of the same value point to the same memory location.
 """
+str1 = "Python"
+str2 = "Python"
 
-nums = [10, 20, 56, 35, 17, 99]
+print(id(str1))
+print(id(str2))
 
-print(type(nums))
+print(hex(id(str1)))
+print(hex(id(str2)))
 
-for num in nums:
-    print(num),print(type(num))
-
-nums = bytearray(nums)
-
-for num in nums:
-    print(num),print(type(num))
+print(id(str1)==id(str2))
 
 
-print(type(nums))
+"""
+116. Print Unicode Characters
+
+Write a Python program to print Unicode characters.
+"""
+str = u'\u0050\u0079\u0074\u0068\u006f\u006e \u0045\u0078\u0065\u0072\u0063\u0069\u0073\u0065\u0073 \u002d \u0077\u0033\u0072\u0065\u0073\u006f\u0075\u0072\u0063\u0065'
+
+str3 = '\0050\0079\0074\0068\006f\006e \0045\0078\0065\0072\0063\0069\0073\0065\0073 \002d \0077\0033\0072\0065\0073\006f\0075\0072\0063\0065'
+print(str)
+print(str3)
+
+str4 = "Python Exercises - w3resource"
 
 
+for char in str4:
+    print(u(ord(char)))
 #import base64
 
 # base64_string
